@@ -1,1 +1,7 @@
-<!--Achtrgrond foto van mezelf?-->
+header img {
+    transition: box-shadow 0.3s ease; /* zorgt voor vloeiende overgang */
+}
+
+header img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* schaduw */
+}
