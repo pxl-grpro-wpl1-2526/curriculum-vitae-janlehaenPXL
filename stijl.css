@@ -1,24 +1,133 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
 }
-header img {
-    transition: box-shadow 0.3s ease; /* zorgt voor vloeiende overgang */
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
+body{
+    background-color: ghostwhite;
 }
 
-header img:hover {
+
+main img {
+    transition: box-shadow 0.3s ease; /* vloeiende overgang */
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin: 1em;
+
+}
+
+main img:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
-header h1{
+main {
+    margin: 1% 10% 1% 10%;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkseagreen;
+    color: white;
     text-align: center;
+    padding: 16px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
+#intro{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#introtext{
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    font-style: italic;
+}
 #container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    opacity: 0.5;
+    opacity: 0.8;
+    font-size: large;
+}
+footer{
+    background-color: darkseagreen;
+    color: white;
+    padding: 12px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+#middelContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+.links{
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    gap: 1em;
+}
+#talen{
+    border-collapse: collapse;
+    width: 100%;
+}
+#talen tr, td{
+    /* Volgens de opdracht "moeten" de oneven velden anders worden gestyled, maar ik vind dit mooier"*/
+    border: 1px solid darkslategray;
+    text-align: center;
+    padding: 12px 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* subtiele schaduw */
 
+
+}
+#talen .index{
+    background-color: darkseagreen;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+.werkgever{
+    font-size: large;
+    text-decoration: none;
+    color: darkgreen;
+}
+.werkgever:hover{
+    background-color: darkseagreen;
+    font-size: larger;
+    color: white;
+}
+#workskills li{
+    padding: 4px;
+}
+.functie{
+    list-style: none;
+    margin-left: 2em;
+    font-weight: bold;
+    font-size: large;
+}
+.takenpakket{
+    margin-top: 5px;
+    list-style: none;
+}
+#interests, #Hobbys{
+    display: flex;
+    flex-direction: column;
+}
+.containerHobbyAndInterest{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1em;
+}
+.rechts{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
