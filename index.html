@@ -2,6 +2,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>curriculum vitae</title>
     <link rel="stylesheet" href="stijl.css">
 </head>
@@ -9,22 +10,26 @@
 <header>
     <h1>Curriculum vitae</h1>
 </header>
-<div class="cv-container">
 <main>
     <div id="intro">
     <a href="https://www.linkedin.com/in/jan-lehaen/" target="_blank">
         <img src="Assets/Profielfoto.jpeg" height="800" width="800" alt="Profiel foto Jan Lehaen"/>
     </a>
-        <div id="introtext">
-        <h1>Jan Lehaen</h1>
-        <p>Ik ben een enthousiaste en creatieve persoon die zich comfortabel voelt in sociale situaties.</p>
-        <p>Mijn vermogen om snel te leren stelt me in staat om snel en efficiënt te handelen, zelfs onder stressvolle omstandigheden.</p>
-        <p>Ik ben vastbesloten om mijn vaardigheden en passie in te zetten om te groeien in mijn carrière en bij te dragen aan het succes van het bedrijf.</p>
+        <div id="introtextbig">
+            <h1>Jan Lehaen</h1>
+            <p>Ik ben een enthousiaste en creatieve persoon die zich comfortabel voelt in sociale situaties.</p>
+            <p>Mijn vermogen om snel te leren stelt me in staat om snel en efficiënt te handelen, zelfs onder stressvolle omstandigheden.</p>
+            <p>Ik ben vastbesloten om mijn vaardigheden en passie in te zetten om te groeien in mijn carrière en bij te dragen aan het succes van het bedrijf.</p>
+            </div>
+        <div id="introtextsmall">
+            <h1 id="name">Jan Lehaen</h1>
+            <p>Ik ben een enthousiaste en creatieve persoon die zich comfortabel voelt in sociale situaties.</p>
+            <p>Mijn vermogen om snel te leren stelt me in staat om snel en efficiënt te handelen, zelfs onder stressvolle omstandigheden.</p>
         </div>
     </div>
-    <div id="middelContainer">
-        <div class="links">
-            <div id="about-me">
+    <section id="middleContainer">
+        <section class="links">
+            <div id="about-me"> <!-- Lijst van maken? -->
                 <h2>Over mij:</h2>
                 <hr>
                 <br>
@@ -42,12 +47,12 @@
                 <br>
                 <h4>E-mail:</h4>
                 <p>janlehaen@icloud.com</p>
-                </div>
+            </div>
             <div id="Language">
                 <h2>Talen:</h2>
                 <hr>
                 <br>
-                <table id="talen">
+                <table id="talentabel">
                     <tr>
                         <td class ="index">Taal</td><td class="index">Schrijven/lezen</td> <td class="index">Spreken</td>
                     </tr>
@@ -61,6 +66,28 @@
                         <td class ="taal">Frans</td><td class="write">/</td> <td class="speak">Matig</td>
                     </tr>
                 </table>
+                <div id="talenlijst">
+                    <ul id="taal">
+                        <li class="taallijstindex">Talen:</li>
+                        <li>Nederlands</li>
+                        <li>Engels</li>
+                        <li>Frans</li>
+                    </ul>
+                    <ul id="spraak">
+                        <li class="taallijstindex">Spreken</li>
+                        <li>Moedertaal</li>
+                        <li>Zeer goed</li>
+                        <li>Matig</li>
+                    </ul>
+                    <ul id="schrijven-lezen">
+                        <li class="taallijstindex">Schrijven/lezen</li>
+                        <li>Moedertaal</li>
+                        <li>Goed</li>
+                        <li>/</li>
+                    </ul>
+
+                </div>
+
             </div>
             <div id="soft-skills">
                 <h2>Softskills:</h2>
@@ -85,8 +112,8 @@
                     <li>Gamen</li>
                 </ul>
             </div>
-        </div>
-        <div class="rechts">
+        </section>
+        <section class="rechts">
             <div id="education">
                 <h2>Opleidingen:</h2>
                 <hr>
@@ -108,11 +135,11 @@
                 <br>
 
             </div>
+            <h2>Werkervaring:</h2>
+            <hr>
+
             <div id="workskills">
-                <!-- Linken toe gevoegd voor informatie bij bedrijven waar ik heb gewerkt -->
-                <h2>Werkervaring:</h2>
-                <hr>
-                <br>
+                <!-- Linken toegevoegd voor informatie bij bedrijven waar ik heb gewerkt -->
                 <ul>
                     <li><a class="werkgever" href="https://www.handelsgids.be/peer/lehaen-electro/" target="_blank">Electro Lehaen: 2013-2017</a> </li>
                     <li class="functie">Functie: Zelfstandig helper</li>
@@ -134,11 +161,11 @@
                 <br>
             </div>
 
-        </div>
-    </div>
+        </section>
+    </section>
 
 </main>
-</div>
+
 <footer>
     <div id="container">
         <div id="links"> Jan Lehaen 1Pro(D)</div>
@@ -146,6 +173,5 @@
         <div id="rechts"><a href ="#">Terug naar boven</a></div>
     </div>
 </footer>
-
 </body>
 </html>

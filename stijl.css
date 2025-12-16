@@ -39,12 +39,17 @@ header{
     justify-content: space-evenly;
     align-items: center;
 }
-#introtext{
+#introtextbig{
     display: flex;
     flex-direction: column;
     font-size: large;
     font-style: italic;
 }
+#introtextsmall{
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    }
 #container{
     display: flex;
     justify-content: space-between;
@@ -61,7 +66,7 @@ footer a{
     text-decoration: none;
     color: white;
 }
-#middelContainer{
+#middleContainer{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -74,11 +79,11 @@ footer a{
     padding: 4px;
     gap: 1em;
 }
-#talen{
+#talentabel{
     border-collapse: collapse;
     width: 100%;
 }
-#talen tr, td{
+#talentabel tr, td{
     /* Volgens de opdracht "moeten" de oneven velden anders worden gestyled, maar ik vind dit mooier"*/
     border: 1px solid darkslategray;
     text-align: center;
@@ -87,28 +92,47 @@ footer a{
 
 
 }
-#talen .index{
+#talentabel .index{
     background-color: darkseagreen;
     color: white;
     text-align: center;
     font-weight: bold;
 }
+#talenlijst{
+    display: flex;
+    gap: 1em;
+}
+#taal, #spraak, #schrijven-lezen{
+    list-style-type: none;
+                           }
+.taallijstindex{
+    font-size: large;
+    font-weight: bold;
+    color: darkseagreen;
+    text-decoration: underline;
+}
 .werkgever{
     font-size: large;
     text-decoration: none;
+    background-color: lightgray;
     color: darkgreen;
+    padding: 5px;
+    border: 1px solid darkslategray;
+    border-radius: 15px;
 }
 .werkgever:hover{
     background-color: darkseagreen;
     font-size: larger;
     color: white;
+    padding: 10px;
 }
 #workskills li{
-    padding: 4px;
+    padding: 10px;
+    list-style: none;
 }
 .functie{
     list-style: none;
-    margin-left: 2em;
+    margin-left: 1em;
     font-weight: bold;
     font-size: large;
 }
@@ -131,3 +155,87 @@ footer a{
     flex-direction: column;
     gap: 1em;
 }
+
+/*Hier pas de mediaquerry's toevoegen*/
+@media screen and (min-width: 992px){ /* Standaard getoont*/
+   #talenlijst{
+       display: none;
+   }
+    #introtextsmall{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px){ /* Tablat grote */
+    body{
+        margin:0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    #introtextsmall{
+        display: none;
+    }
+    #talenlijst{
+        display: none;
+    }
+    #middleContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 1em;
+    }
+    #intro{
+        display: flex;
+        flex-direction: column;
+        font-size: large;
+        font-style: italic;
+    }
+    #talentabel tr, td{
+        border: none;
+        text-align: center;
+        padding: 12px 15px;
+        box-shadow: none;
+    }
+}
+@media screen and (max-width: 576px) { /* gsm grote */
+    body{
+        margin:0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    #middleContainer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 1em;
+    }
+    #intro{
+            display: flex;
+            flex-direction: column;
+            font-size: large;
+            font-style: italic;
+        }
+    #workskills {
+        text-align: center;
+    }
+    #talentabel{
+        display: none;
+    }
+    #introtextbig{
+        display: none;
+    }
+    .functie{
+        list-style: none;
+        font-weight: bold;
+        font-size: large;
+    }
+    #name{
+        text-align: center;
+    }
+    }
+
