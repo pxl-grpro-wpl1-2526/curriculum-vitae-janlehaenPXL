@@ -54,6 +54,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     opacity: 0.8;
     font-size: large;
 }
@@ -156,7 +157,7 @@ footer a{
     gap: 1em;
 }
 
-/*Hier pas de mediaquerry's toevoegen*/
+/*Hierna pas de mediaquerry's toevoegen*/
 @media screen and (min-width: 992px){ /* Standaard getoont*/
    #talenlijst{
        display: none;
@@ -201,6 +202,7 @@ footer a{
 }
 @media screen and (max-width: 576px) { /* gsm grote */
     body{
+        max-width: 100%;
         margin:0;
         padding: 0;
         display: flex;
@@ -209,8 +211,8 @@ footer a{
     #middleContainer {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
+
+
         justify-content: space-evenly;
         gap: 1em;
     }
@@ -237,5 +239,13 @@ footer a{
     #name{
         text-align: center;
     }
+    #education{
+        text-align: center;
+    }
+
+/*Soms gebeurt het dat ik horizontaal moet scrollen als ik via de dev-tools de website bekijk,
+maar meestal heb ik de optie niet. Dus ik weet niet waar dit aan ligt*/
+
+
     }
 
